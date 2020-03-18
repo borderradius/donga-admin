@@ -1,0 +1,8 @@
+.breadcrumb {
+  @apply p-4 border-b text-sm fixed py-5 text-gray-600;
+  top: 67px;
+  z-index: 99;
+  svg {
+    @apply text-gray-400;
+  }
+}

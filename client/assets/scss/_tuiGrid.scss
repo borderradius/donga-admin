@@ -1,0 +1,60 @@
+.tui-grid-body-container {
+  @apply cursor-pointer;
+}
+.tui-grid-cell {
+  background-color: white !important;
+}
+.tui-grid-cell-header {
+  border: none !important;
+  border-top: 1px solid #eaeaea !important;
+}
+.tui-grid-header-area {
+  border-bottom: 1px solid #eaeaea !important;
+}
+// .tui-grid-lside-area {
+//   .tui-grid-table {
+//     th {
+//       padding-left: 0 !important;
+//       margin-left: 0 !important;
+//     }
+//   }
+// }
+.tui-grid-border-line-top {
+  display: none !important;
+}
+.tui-grid-border-line-bottom {
+  display: none !important;
+}
+.tui-grid-table {
+  td {
+    text-align: left !important;
+  }
+}
+
+.tui-pagination {
+  // margin: 14px auto 12px !important;
+  // text-align: left !important;
+  strong {
+    background-color: #90a3ff !important;
+    // background-color: lighten(#5d78ff, 10%) !important;
+    @apply rounded-sm;
+  }
+  .tui-page-btn {
+    // text-align: center;
+    margin-right: 0.5rem !important;
+    border: none !important;
+    &.tui-next {
+      margin-left: 0 !important;
+    }
+    &.tui-first, &.tui-prev, &.tui-next, &.tui-last {
+      background-color: #f0f3ff;
+      // color: #93a2dd;
+      @apply rounded-sm;
+      &:hover {
+        // color: #fff !important;
+        background-color: #90a3ff !important;
+        // background-color: lighten(#5d78ff, 10%) 
+      }
+    }
+  }
+}

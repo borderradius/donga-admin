@@ -1,0 +1,68 @@
+.btn {
+  @apply inline-block bg-adm-blue-light text-white px-4 py-2 rounded tracking-wider text-sm font-semibold;
+  &:hover {
+    // @apply bg-adm-blue;
+  }
+  &:focus {
+    @apply outline-none shadow-outline;
+  }
+  &:active {
+    @apply bg-indigo-600;
+  }
+  @screen sm {
+    // @apply text-base;
+  }
+  @screen md {
+    // &:hover {
+    //   @apply bg-green-400 text-4xl;
+    // }
+  }
+  &-gray {
+    @apply bg-gray-400 text-gray-600;
+    &:hover {
+      @apply bg-gray-600 text-gray-800;
+    }
+    &:active {
+      @apply bg-gray-500;
+    }
+  }
+  &-sm {
+    @apply text-xs px-2 py-1;
+  }
+  &-del {
+    @apply bg-red-400 text-white;
+    &:hover {
+      @apply bg-red-600;
+    }
+    &:active {
+      @apply bg-red-500;
+    }
+  }
+  &-info {
+    @apply bg-orange-400 text-white;
+    &:hover {
+      @apply bg-orange-600;
+    }
+    &:active {
+      @apply bg-orange-500;
+    }
+  }
+  &-mod {
+    @apply bg-purple-400 text-white;
+    &:hover {
+      @apply bg-purple-600;
+    }
+    &:active {
+      @apply bg-purple-500;
+    }
+  }
+  &-register {
+    @apply bg-teal-400 text-white;
+    &:hover {
+      @apply bg-teal-600;
+    }
+    &:active {
+      @apply bg-teal-500;
+    }
+  }
+}

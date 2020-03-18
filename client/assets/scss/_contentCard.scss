@@ -1,0 +1,32 @@
+.content__card {
+  @apply bg-white rounded mb-4;
+  &.full {
+    @apply w-full;
+  }
+  &.half {
+    width: calc(50% - 0.5rem);
+  }
+  &--title {
+    @apply border-b border-gray-300 p-4 relative;
+    h2 {
+      @apply font-semibold tracking-wider;
+    }
+  }
+  &--container {
+    @apply p-4;
+  }
+  &--fold {
+    @apply absolute top-0 right-0;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    transform: rotateX(180deg);
+    transition: all ease 0.3s;
+    &.toggle {
+      transform: rotateX(0deg);
+      transition: all ease 0.3s;
+    }
+    &:focus {
+      @apply outline-none;
+    }
+  }
+}

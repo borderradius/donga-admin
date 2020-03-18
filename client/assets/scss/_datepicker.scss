@@ -1,0 +1,9 @@
+.datepicker {
+  @apply appearance-none block w-180 border rounded px-4 cursor-pointer;
+}
+.datepicker-input {
+  @apply cursor-pointer;
+  &:focus {
+    @apply border-none outline-none;
+  }
+}

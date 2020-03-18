@@ -1,0 +1,34 @@
+{
+  // Vue Extension settings
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.html": "none",
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.ts": "none",
+  "vetur.format.defaultFormatter.css": "none",
+  "vetur.format.defaultFormatter.scss": "none",
+  "vetur.format.defaultFormatter.less": "none",
+  "vetur.format.defaultFormatter.postcss": "none",
+  "vetur.format.defaultFormatter.stylus": "none",
+  // Javascript Extension settings
+  "javascript.format.enable": false,
+  // "prettier.eslintIntegration": true,
+  "editor.formatOnSave": true,
+  // "eslint.validate": [
+  //   {
+  //     "language": "vue",
+  //     "autoFix": true
+  //   },
+  //   {
+  //     "language": "javascript",
+  //     "autoFix": true
+  //   },
+  // ],
+  "advancedNewFile.exclude": {
+    "node_modules": true,
+    "dist": true
+  },
+  // "eslint.autoFixOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}

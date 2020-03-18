@@ -1,0 +1,15 @@
+.gnb {
+  @apply pl-2;
+  li {
+    @apply py-2;
+  }
+  &__active {
+    @apply text-indigo-500 bg-gray-200;
+  }
+  a {
+    @apply inline-block rounded text-gray-700 py-2 px-3 uppercase text-xs font-semibold;
+    &:hover {
+      @apply text-indigo-500 bg-gray-200;
+    }
+  }
+}

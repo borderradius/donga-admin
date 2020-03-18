@@ -1,0 +1,131 @@
+.lnb {
+  @apply h-screen text-gray-300 fixed overflow-scroll pb-8;
+  width: 265px;
+  background-color: #1e1e2d;
+  font-size: 14px;
+  text-transform: initial;
+  color: #a2a3b7;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+  // height: calc(100vh - 8rem);
+  h4, h5 {
+    // @apply text-white;
+  }
+  h4, h5 {
+    @apply py-2;
+  }
+  h6 {
+    @apply py-1;
+  }
+  svg {
+    // @apply text-white;
+  }
+  .pre-icon {
+    @apply align-bottom;
+    width: 20px;
+    height: 20px;
+    // font-size: 16px;
+    margin-left: -10px;
+    margin-right: 10px;
+    color: #494b74; // no-active
+  }
+  #menu1 {
+    > li > a {
+      @apply px-6 py-1;
+      transition: all ease 0.3s;
+      &:hover, &.active {
+        @apply text-white;
+        background-color: darken(#1e1e2d, 10%);
+        .pre-icon {
+          color: lighten(#5d78ff, 10%);
+        }
+        transition: all ease 0.3s;
+      }
+      .chevron-right {
+        transform: rotate(0deg);
+        transition: all ease 0.3s;
+      }
+      &.active {
+        .chevron-right {
+          transform: rotate(90deg);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+  #menu1 .active + div #menu2 {
+    display: block;
+    animation-delay:0s;
+    animation-name: slidemenu;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+  }
+
+  #menu2 {
+    display: none;
+    > li > a {
+      @apply px-6 py-1;
+      transition: all ease 0.3s;
+      &:hover, &.active {
+        @apply text-white;
+        background-color: darken(#1e1e2d, 10%);
+        .pre-icon {
+          color: lighten(#5d78ff, 10%);
+        }
+        transition: all ease 0.3s;
+      }
+      .chevron-right {
+        transform: rotate(0deg);
+        transition: all ease 0.3s;
+      }
+      &.active {
+        .chevron-right {
+          transform: rotate(90deg);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+  }
+
+  #menu2 .active + div #menu3{
+    display: block;
+    animation-delay:0s;
+    animation-name: slidemenu;
+    animation-timing-function: ease;
+    animation-duration: 0.3s;
+  }
+
+  #menu3 {
+    display: none;
+    > li > a {
+      @apply pl-10 py-1;
+      transition: all ease 0.3s;
+      &:hover, &.active {
+        @apply text-white;
+        background-color: darken(#1e1e2d, 10%);
+        .pre-icon {
+          color: lighten(#5d78ff, 10%);
+        }
+        transition: all ease 0.3s;
+      }
+      .chevron-right {
+        transform: rotate(0deg);
+        transition: all ease 0.3s;
+      }
+      &.active {
+        .chevron-right {
+          transform: rotate(90deg);
+          transition: all ease 0.3s;
+        }
+      }
+    }
+    .circle {
+      width: 3px;
+      height: 3px;
+      color: lighten(#5d78ff, 10%);
+      margin-right: 8px;
+    }
+  }
+}

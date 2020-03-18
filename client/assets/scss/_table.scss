@@ -1,0 +1,19 @@
+.table-basic {
+  @apply text-left w-full border-collapse;
+  thead {
+    th {
+      @apply py-4 px-6 text-xs border-b font-normal;
+    }
+  }
+  tbody {
+    tr {
+      @apply text-xs;
+      &:hover {
+        @apply bg-gray-100;
+      }
+    }
+    td {
+      @apply py-4 px-6 border-b;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.userInfo {
+  @apply inline-block p-2 rounded-sm cursor-pointer relative;
+  &:hover {
+    @apply bg-gray-200
+  }
+  &__initial {
+    @apply bg-teal-100 w-8 h-8 rounded-sm inline-block text-center font-semibold text-xl text-teal-400 uppercase;
+  }
+  &__popMenu {
+    z-index: 100;
+  }
+}

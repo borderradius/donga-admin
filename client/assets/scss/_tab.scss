@@ -1,0 +1,12 @@
+.tab {
+  @apply inline-block border border-white rounded text-gray-600 py-1 px-3;
+  transition: all ease 0.3s;
+  &:hover {
+    @apply bg-gray-200 border-gray-200;
+    transition: all ease 0.3s;
+  }
+  &.active {
+    @apply border-adm-blue-light bg-adm-blue-light text-white;
+    transition: all ease 0.3s;
+  }
+}

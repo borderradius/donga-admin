@@ -1,0 +1,24 @@
+// @font-face {
+//   font-family: 'Poppins-thin';
+//   font-style: thin;
+//   font-weight: 400;
+//   src: 
+//     url('/font/Poppins-Thin.woff') format('woff'),
+//     url('/font/Poppins-Thin.ttf') format('truetype');
+// }
+@font-face {
+  font-family: 'Poppins-regular';
+  // font-weight: 100;
+  src: 
+    url('/font/Poppins-Regular.woff') format('woff'),
+    url('/font/Poppins-Regular.ttf') format('truetype');
+}
+
+// Noto sans
+@font-face {
+  font-family: 'Noto-sans-regular';
+  src: 
+    url('/font/NotoSansKR-Regular-Alphabetic.woff') format('woff2'),
+    url('/font/NotoSansKR-Regular-Alphabetic.woff') format('woff'),
+    url('/font/NotoSansKR-Regular-Alphabetic.ttf') format('truetype');
+}
