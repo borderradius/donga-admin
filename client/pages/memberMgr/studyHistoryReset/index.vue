@@ -50,7 +50,7 @@
         </tr>
       </SearchBox>
 
-      <Grid
+      <!-- <Grid
         ref="tuiGrid"
         :key="gridProps.randomKey"
         :data="historyList"
@@ -63,7 +63,7 @@
         :header="gridProps.header"
         class="px-2"
         @click="onClick"
-      />
+      /> -->
     </div>
   </ContentCard>
 </template>

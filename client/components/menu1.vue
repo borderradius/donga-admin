@@ -14,14 +14,14 @@
         <h4>
           <font-awesome-icon
             :icon="[item.icon1, item.icon2]"
-            class="text-xs pre-icon"
+            class="pre-icon"
           />
           {{ item.menu1 }}
         </h4>
         <font-awesome-icon
           v-if="item.child"
           :icon="['fas', 'chevron-right']"
-          class="text-xs chevron-right"
+          class="chevron-right"
         />
       </a>
       <Menu2 v-if="item.child" :data="item.child" />

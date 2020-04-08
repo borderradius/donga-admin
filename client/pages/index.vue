@@ -1,17 +1,17 @@
 <template>
   <div>
     <!-- <h1>index</h1> -->
-    <!-- <h1 class="font-semibold text-teal-400 text-lg uppercase tracking-widest">
+    <h1 class="font-semibold text-teal-400 text-lg uppercase tracking-widest">
       ag-grid
     </h1>
     <AgGridVue
-      :gridOptions="gridOptions"
-      :defaultColDef="gridOptions.defaultColDef"
-      :columnDefs="columnDefs"
-      :rowData="lists"
+      :grid-options="gridOptions"
+      :default-col-def="gridOptions.defaultColDef"
+      :column-defs="columnDefs"
+      :row-data="lists"
       class="ag-theme-balham w-full"
       style="height: 300px;"
-    /> -->
+    />
   </div>
 </template>
 

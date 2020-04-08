@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>applications / users</h1>
-    <AgGridVue
+    <!-- <AgGridVue
       :grid-options="gridOptions"
       :default-col-def="gridOptions.defaultColDef"
       :column-defs="columnDefs"
@@ -10,7 +10,7 @@
       class="ag-theme-balham w-full"
       style="height: 300px;"
       @grid-ready="onGridReady"
-    />
+    /> -->
     <div class="mt-4">
       <button
         class="bg-gray-600 text-white rounded-sm text-xs px-2 py-1"

@@ -26,13 +26,12 @@ module.exports = {
    */
   css: [
     { src: '~assets/css/tailwind.css', lang: 'css' },
-    { src: '~assets/scss/index.scss', lang: 'scss' },
-    { src: '@fortawesome/fontawesome-svg-core/styles.css', lang: 'css' }
+    { src: '~assets/scss/index.scss', lang: 'scss' }
   ],
-  server: {
-    host: '0.0.0.0',
-    port: '8030'
-  },
+  // server: {
+  //   host: '0.0.0.0',
+  //   port: '8030'
+  // },
   tailwindcss: {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/css/tailwind.css',
@@ -51,15 +50,11 @@ module.exports = {
     { src: '~/plugins/vuejs-datepicker', ssr: false },
     { src: '~/plugins/vue-daum-postcode', ssr: false },
     { src: '~/plugins/vee-validate', ssr: false },
-    { src: '~/plugins/contentProvider', ssr: false },
     { src: '~/plugins/apexcharts', ssr: false },
-    // { src: '~/plugins/i18n', ssr: false },
+    { src: '~/plugins/fontawesome', ssr: false },
     { src: '~/plugins/GlobalComponents', ssr: false }
     // { src: '~/plugins/directives', ssr: false }
   ],
-  generate: {
-    routes: ['/', '/about', '/fr', '/fr/about']
-  },
   /*
    ** Nuxt.js dev-modules
    */
@@ -74,24 +69,11 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    'nuxt-fontawesome',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/moment'
   ],
   moment: {
     locales: ['ko']
-  },
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      },
-      {
-        set: '@fortawesome/free-brands-svg-icons',
-        icons: ['fab']
-      }
-    ]
   },
   /*
    ** Axios module configuration

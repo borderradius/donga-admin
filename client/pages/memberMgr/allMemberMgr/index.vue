@@ -66,7 +66,7 @@
         </tr>
       </SearchBox>
 
-      <Grid
+      <!-- <Grid
         ref="tuiGrid"
         :key="gridProps.randomKey"
         :data="memberList"
@@ -81,7 +81,7 @@
         @click="onClick"
         @check="onCheck"
         @uncheck="onUnCheck"
-      />
+      /> -->
       <!-- :theme="gridProps.myTheme" -->
     </div>
   </ContentCard>

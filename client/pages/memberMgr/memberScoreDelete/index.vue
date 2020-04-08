@@ -54,7 +54,7 @@
             </tr>
           </SearchBox>
 
-          <Grid
+          <!-- <Grid
             ref="tuiGrid"
             :key="gridProps.randomKey"
             :data="memberList"
@@ -67,7 +67,7 @@
             :header="gridProps.header"
             class="px-2"
             @click="onClick"
-          />
+          /> -->
         </div>
         <div slot="tab-container-2">EX 회원성적 삭제</div>
       </Tabs>

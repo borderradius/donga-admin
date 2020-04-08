@@ -9,24 +9,16 @@
   &::-webkit-scrollbar {
     display: none !important;
   }
-  // height: calc(100vh - 8rem);
-  h4, h5 {
-    // @apply text-white;
-  }
   h4, h5 {
     @apply py-2;
   }
   h6 {
     @apply py-1;
   }
-  svg {
-    // @apply text-white;
-  }
   .pre-icon {
     @apply align-bottom;
     width: 20px;
     height: 20px;
-    // font-size: 16px;
     margin-left: -10px;
     margin-right: 10px;
     color: #494b74; // no-active

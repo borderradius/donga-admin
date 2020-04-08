@@ -59,7 +59,7 @@
         </div>
       </div>
 
-      <Grid
+      <!-- <Grid
         ref="tuiGrid"
         :key="gridProps.randomKey"
         :data="resetHistoryList"
@@ -71,7 +71,7 @@
         :page-options="gridProps.pageOptions"
         :header="gridProps.header"
         class="px-2"
-      />
+      /> -->
     </div>
   </ContentCard>
 </template>

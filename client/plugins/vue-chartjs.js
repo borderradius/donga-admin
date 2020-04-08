@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import { Bar, Line, Radar } from 'vue-chartjs'
 
+console.warn(Line)
 const base = {
   // eslint-disable-next-line vue/require-prop-types
   props: ['data', 'options'],

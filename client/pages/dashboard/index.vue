@@ -5,15 +5,11 @@
     </h2>
     <div slot="content-container">
       <div class="mb-4">
-        d3 gogo
-        <!-- <D3HBar /> -->
-      </div>
-      <div class="mb-4">
         <div class="mb-4">
           <Btn
             label="Get Selected Rows"
             type="info"
-            @btnClick="getSelectedRows"
+            @btnClick1="getSelectedRows"
           />
         </div>
         <div class="mb-4">
@@ -31,18 +27,18 @@
         </div>
       </div>
       <div class="flex mb-4">
-        <Btn label="검색" class="mr-2" @btnClick="btnClick" />
-        <Btn label="수정" type="mod" class="mr-2" @btnClick="btnClick" />
+        <Btn label="검색" class="mr-2" @btnClick1="btnClick1" />
+        <Btn label="수정" type="mod" class="mr-2" @btnClick1="btnClick1" />
         <Btn
           label="정보"
           type="info"
           size="sm"
           class="mr-2"
-          @btnClick="btnClick"
+          @btnClick1="btnClick1"
         />
-        <Btn label="등록" type="register" class="mr-2" @btnClick="btnClick" />
-        <Btn label="삭제" type="del" class="mr-2" @btnClick="btnClick" />
-        <Btn label="회색" type="gray" class="mr-2" @btnClick="btnClick" />
+        <Btn label="등록" type="register" class="mr-2" @btnClick1="btnClick1" />
+        <Btn label="삭제" type="del" class="mr-2" @btnClick1="btnClick1" />
+        <Btn label="회색" type="gray" class="mr-2" @btnClick1="btnClick1" />
       </div>
       <div class="flex mb-4">
         <modal name="hello-world">

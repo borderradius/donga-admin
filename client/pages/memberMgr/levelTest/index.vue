@@ -51,7 +51,7 @@
         </tr>
       </SearchBox>
 
-      <Grid
+      <!-- <Grid
         ref="tuiGrid"
         :key="gridProps.randomKey"
         :data="levelTestList"
@@ -64,7 +64,7 @@
         :header="gridProps.header"
         class="px-2"
         @click="onClick"
-      />
+      /> -->
       <!-- @click="onClick"
         @check="onCheck"
         @uncheck="onUnCheck" -->
