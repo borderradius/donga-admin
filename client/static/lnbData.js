@@ -7,48 +7,116 @@ export const lnbData = [
     path: 'dashboard'
   },
   {
+    menu1: '회원관리',
+    icon1: 'fas',
+    icon2: 'user',
+    path: 'member',
+    child: [
+      {
+        menu2: '회원리스트',
+        link: 'member/list',
+        path: 'list'
+      }
+    ]
+  },
+  {
+    menu1: '상품 • 콘텐츠 관리',
+    icon1: 'fas',
+    icon2: 'gifts',
+    path: 'productContent',
+    child: [
+      {
+        menu2: '콘텐츠관리',
+        link: 'productContent/contentMgt',
+        path: 'contentMgt'
+      },
+      {
+        menu2: '상품관리',
+        link: 'productContent/productMgt',
+        path: 'productMgt'
+      }
+    ]
+  },
+  {
+    menu1: '결제 관리',
+    icon1: 'fas',
+    icon2: 'money-check-alt',
+    path: 'payment',
+    child: [
+      {
+        menu2: '전체상품 결제리스트',
+        link: 'payment/list',
+        path: 'list'
+      }
+    ]
+  },
+  {
+    menu1: '게시판 관리',
+    icon1: 'fas',
+    icon2: 'list-ol',
+    path: 'board',
+    child: [
+      {
+        menu2: '교육자료실',
+        link: 'board/reference',
+        path: 'reference'
+      },
+      {
+        menu2: 'Q&A',
+        link: 'board/qna',
+        path: 'qna'
+      },
+      {
+        menu2: '공지사항',
+        link: 'board/notice',
+        path: 'notice'
+      }
+    ]
+  },
+  {
     menu1: '컴포넌트사용법',
     icon1: 'fas',
     icon2: 'wave-square',
     link: 'compUsage',
     path: 'compUsage'
-  },
-  {
-    menu1: '회원관리',
-    icon1: 'fas',
-    icon2: 'user',
-    path: 'memberMgr',
-    child: [
-      {
-        menu2: '전체회원관리',
-        link: 'memberMgr/allMemberMgr',
-        path: 'allMemberMgr'
-      },
-      {
-        menu2: '레벨테스트 현황',
-        link: 'memberMgr/levelTest',
-        path: 'levelTest'
-      },
-      {
-        menu2: '회원성적 삭제',
-        link: 'memberMgr/memberScoreDelete',
-        path: 'memberScoreDelete'
-      },
-      {
-        menu2: 'EB코스 변경',
-        link: ''
-      },
-      {
-        menu2: '학습 이력 초기화',
-        link: 'memberMgr/studyHistoryReset',
-        path: 'studyHistoryReset'
-      },
-      {
-        menu2: '3Q검사 / 종합특성검사 관리',
-        link: ''
-      }
-    ]
   }
+
+  // {
+  //   menu1: '회원관리',
+  //   icon1: 'fas',
+  //   icon2: 'user',
+  //   path: 'memberMgr',
+  //   child: [
+  //     {
+  //       menu2: '전체회원관리',
+  //       link: 'memberMgr/allMemberMgr',
+  //       path: 'allMemberMgr'
+  //     },
+  //     {
+  //       menu2: '레벨테스트 현황',
+  //       link: 'memberMgr/levelTest',
+  //       path: 'levelTest'
+  //     },
+  //     {
+  //       menu2: '회원성적 삭제',
+  //       link: 'memberMgr/memberScoreDelete',
+  //       path: 'memberScoreDelete'
+  //     },
+  //     {
+  //       menu2: 'EB코스 변경',
+  //       link: ''
+  //     },
+  //     {
+  //       menu2: '학습 이력 초기화',
+  //       link: 'memberMgr/studyHistoryReset',
+  //       path: 'studyHistoryReset'
+  //     },
+  //     {
+  //       menu2: '3Q검사 / 종합특성검사 관리',
+  //       link: ''
+  //     }
+  //   ]
+  // }
   // {
   //   menu1: '리스트',
   //   icon1: 'fas',
