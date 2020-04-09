@@ -6,7 +6,7 @@ module.exports = {
       script: './server',
       env: {
         NODE_ENV: 'production',
-        HOST: '0.0.0.0',
+        HOST: '127.0.0.1',
         PORT: '3078',
         API_URL: 'http://192.168.5.11:8040'
       },

@@ -1,18 +1,5 @@
 <template>
-  <div>
-    <!-- <h1>index</h1> -->
-    <h1 class="font-semibold text-teal-400 text-lg uppercase tracking-widest">
-      ag-grid
-    </h1>
-    <AgGridVue
-      :grid-options="gridOptions"
-      :default-col-def="gridOptions.defaultColDef"
-      :column-defs="columnDefs"
-      :row-data="lists"
-      class="ag-theme-balham w-full"
-      style="height: 300px;"
-    />
-  </div>
+  <div />
 </template>
 
 <script>
@@ -55,4 +42,7 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+/* @import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-material.css'; */
+</style>

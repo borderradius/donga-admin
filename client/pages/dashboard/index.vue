@@ -9,13 +9,13 @@
           <Btn
             label="Get Selected Rows"
             type="info"
-            @btnClick1="getSelectedRows"
+            @btnClick="getSelectedRows"
           />
         </div>
         <div class="mb-4">
-          <AgGridVue
+          <!-- :default-col-def="gridOptions.defaultColDef" -->
+          <!-- <ag-grid-vue
             :column-defs="columnDefs"
-            :default-col-def="gridOptions.defaultColDef"
             :row-data="rowData"
             :grid-options="gridOptions"
             :group-selects-children="true"
@@ -23,22 +23,23 @@
             class="ag-theme-material w-full"
             style="height: 610px;"
             @grid-ready="onGridReady"
-          />
+          /> -->
+          <ag-grid />
         </div>
       </div>
       <div class="flex mb-4">
-        <Btn label="검색" class="mr-2" @btnClick1="btnClick1" />
-        <Btn label="수정" type="mod" class="mr-2" @btnClick1="btnClick1" />
+        <Btn label="검색" class="mr-2" @btnClick="btnClick" />
+        <Btn label="수정" type="mod" class="mr-2" @btnClick="btnClick" />
         <Btn
           label="정보"
           type="info"
           size="sm"
           class="mr-2"
-          @btnClick1="btnClick1"
+          @btnClick="btnClick"
         />
-        <Btn label="등록" type="register" class="mr-2" @btnClick1="btnClick1" />
-        <Btn label="삭제" type="del" class="mr-2" @btnClick1="btnClick1" />
-        <Btn label="회색" type="gray" class="mr-2" @btnClick1="btnClick1" />
+        <Btn label="등록" type="register" class="mr-2" @btnClick="btnClick" />
+        <Btn label="삭제" type="del" class="mr-2" @btnClick="btnClick" />
+        <Btn label="회색" type="gray" class="mr-2" @btnClick="btnClick" />
       </div>
       <div class="flex mb-4">
         <modal name="hello-world">
@@ -78,6 +79,7 @@
 </template>
 
 <script>
+import AgGrid from '../../components/agGrid'
 import {
   columnDefs,
   gridOptions,
@@ -85,6 +87,9 @@ import {
 } from '~/static/agGrid/agGridConfig.js'
 
 export default {
+  components: {
+    'ag-grid': AgGrid
+  },
   data() {
     return {
       defaultOptions: null,
@@ -222,3 +227,7 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-material.css';
+</style>

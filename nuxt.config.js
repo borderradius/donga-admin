@@ -26,6 +26,12 @@ module.exports = {
    */
   css: [
     { src: '~assets/css/tailwind.css', lang: 'css' },
+    { src: 'ag-grid-community/dist/styles/ag-grid.css', lang: 'css' },
+    { src: 'ag-grid-community/dist/styles/ag-theme-material.css', lang: 'css' },
+    // {
+    //   src: 'ag-grid-community/dist/styles/ag-theme-material.css',
+    //   lang: 'scss'
+    // },
     { src: '~assets/scss/index.scss', lang: 'scss' }
   ],
   // server: {
@@ -35,13 +41,16 @@ module.exports = {
   tailwindcss: {
     configPath: '~/tailwind.config.js',
     cssPath: '~/assets/css/tailwind.css',
-    purgeCSSInDev: false
+    purgeCSSInDev: true
+  },
+  purgeCSS: {
+    whitelist: ['ag']
   },
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/ag-grid', ssr: false },
+    // { src: '~/plugins/ag-grid', ssr: false },
     { src: '~/plugins/tui-grid', ssr: false },
     { src: '~/plugins/tui-editor', ssr: false },
     { src: '~/plugins/vue-js-modal', ssr: false },
@@ -121,6 +130,8 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
+    extractCSS: true,
+    transpile: ['/plugins'],
     // vendor: ['vue-i18n'],
     extend(config, ctx) {
       // Run ESLint on save
