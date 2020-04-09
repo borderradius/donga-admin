@@ -14,7 +14,7 @@
         </div>
         <div class="mb-4">
           <!-- :default-col-def="gridOptions.defaultColDef" -->
-          <!-- <ag-grid-vue
+          <AgGridVue
             :column-defs="columnDefs"
             :row-data="rowData"
             :grid-options="gridOptions"
@@ -23,8 +23,8 @@
             class="ag-theme-material w-full"
             style="height: 610px;"
             @grid-ready="onGridReady"
-          /> -->
-          <ag-grid />
+          />
+          <!-- <ag-grid /> -->
         </div>
       </div>
       <div class="flex mb-4">
@@ -79,7 +79,7 @@
 </template>
 
 <script>
-import AgGrid from '../../components/agGrid'
+// import AgGrid from '../../components/agGrid'
 import {
   columnDefs,
   gridOptions,
@@ -87,9 +87,9 @@ import {
 } from '~/static/agGrid/agGridConfig.js'
 
 export default {
-  components: {
-    'ag-grid': AgGrid
-  },
+  // components: {
+  //   'ag-grid': AgGrid
+  // },
   data() {
     return {
       defaultOptions: null,

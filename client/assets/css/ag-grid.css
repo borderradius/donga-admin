@@ -1,8 +1,4 @@
-/**
- ****************************
- * Generic Styles
- ****************************1
-*/
+/* purgecss start ignore */
 ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
   display: block; }
 
@@ -2534,4 +2530,4 @@ ag-grid, ag-grid-angular, ag-grid-ng2, ag-grid-polymer, ag-grid-aurelia {
     padding: 0 10px; }
     .ag-chart-tabbed-menu .ag-chart-settings .ag-chart-settings-nav-bar .ag-nav-card-selector .ag-nav-card-item {
       cursor: pointer; }
-
+/* purgecss end ignore */

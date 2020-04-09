@@ -26,8 +26,8 @@ module.exports = {
    */
   css: [
     { src: '~assets/css/tailwind.css', lang: 'css' },
-    { src: 'ag-grid-community/dist/styles/ag-grid.css', lang: 'css' },
-    { src: 'ag-grid-community/dist/styles/ag-theme-material.css', lang: 'css' },
+    { src: '~assets/css/ag-grid.css', lang: 'css' },
+    { src: '~assets/css/ag-theme-material.css', lang: 'css' },
     // {
     //   src: 'ag-grid-community/dist/styles/ag-theme-material.css',
     //   lang: 'scss'
@@ -43,14 +43,14 @@ module.exports = {
     cssPath: '~/assets/css/tailwind.css',
     purgeCSSInDev: true
   },
-  purgeCSS: {
-    whitelist: ['ag']
-  },
+  // purgeCSS: {
+  //   whitelist: () => ['ag']
+  // },
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    // { src: '~/plugins/ag-grid', ssr: false },
+    { src: '~/plugins/ag-grid', ssr: false },
     { src: '~/plugins/tui-grid', ssr: false },
     { src: '~/plugins/tui-editor', ssr: false },
     { src: '~/plugins/vue-js-modal', ssr: false },
@@ -130,8 +130,9 @@ module.exports = {
     /*
      ** You can extend webpack config here
      */
-    extractCSS: true,
-    transpile: ['/plugins'],
+
+    // extractCSS: true,
+    // transpile: ['/plugins'],
     // vendor: ['vue-i18n'],
     extend(config, ctx) {
       // Run ESLint on save
@@ -143,6 +144,20 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+      // if (!ctx.isDev) {
+      //   // Remove unused CSS using PurgeCSS. See https://github.com/FullHuman/purgecss
+      //   // for more information about PurgeCSS.
+      //   config.plugins.push(
+      //     new PurgecssPlugin({
+      //       // paths: glob.sync([
+      //       //   path.join(__dirname, './pages/**/*.vue'),
+      //       //   path.join(__dirname, './layouts/**/*.vue'),
+      //       //   path.join(__dirname, './components/**/*.vue')
+      //       // ]),
+      //       whitelist: ['html', 'body', 'ag']
+      //     })
+      //   )
+      // }
     }
     // postcss: {
     //   plugins: {
